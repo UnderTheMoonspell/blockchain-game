@@ -1,13 +1,13 @@
 const main = async () => {
   const gameContractFactory = await hre.ethers.getContractFactory('MyEpicGame');
-  const gameContract = await gameContractFactory.deploy(["Master Chief", "Goku", "Ryu"],       // Names
+  const gameContract = await gameContractFactory.deploy(["Master Chief", "Goku", "Sonic"],       // Names
     ["https://images.eurogamer.net/2020/articles/2020-07-17-12-19/digitalfoundry-2020-halo-3-master-chief-collection-tech-review-1594984762293.jpg/EG11/resize/1200x-1/digitalfoundry-2020-halo-3-master-chief-collection-tech-review-1594984762293.jpg", // Images
       "https://wegotthiscovered.com/wp-content/uploads/2021/07/Ultra-Instinct-Goku.jpg",
-      "https://static.wikia.nocookie.net/p__/images/e/e4/Ryo_Hazuki_PXZ2.png/revision/latest/top-crop/width/360/height/360?cb=20180113000551&path-prefix=protagonist"],
+      "https://www.smashbros.com/images/og/sonic.jpg"],
     [100, 200, 100],                    // HP values
     [150, 9000, 80],  // Attack
-    "Reaper", // Boss name
-    "https://static.wikia.nocookie.net/overwatch_gamepedia/images/8/8c/OW2_Reaper.png/revision/latest?cb=20210623082134", // Boss image
+    "Covenant", // Boss name
+    "https://content.halocdn.com/media/Default/encyclopedia/factions/covenant/covenant-square-542x542-d64b90ab13ab419c937f42b24e9d6a06.jpg", // Boss image
     10000, // Boss hp
     50 // Boss attack damage
   );
